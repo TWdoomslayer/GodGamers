@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GodGamers</title>
+<style>
+body {margin:0;font-family:'Cinzel', serif;background-color:#0b0b0d;color:#d4c39a;}
+.main-header {text-align:center;padding:3rem 1rem;background:linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.7));border-bottom:3px solid #3e2e1e;}
+.site-title {font-family:'Cinzel', serif;font-size:4rem;letter-spacing:6px;color:#f05c1b;text-shadow:0 0 10px #f05c1b,0 0 20px #b73200;}
+.site-tagline {color:#d4c39a;font-size:1.2rem;margin-top:1rem;}
+nav {text-align:center;margin-top:1rem;}
+nav a {color:#d4c39a;margin:0 1rem;text-decoration:none;font-weight:bold;}
+nav a:hover {color:#f05c1b;}
+.container {max-width:1000px;margin:2rem auto;padding:1rem;background-color:rgba(0,0,0,0.7);border-radius:8px;}
+.review {margin-bottom:2rem;padding-bottom:1rem;border-bottom:1px solid #3e2e1e;}
+.review h2 {color:#f05c1b;margin-bottom:0.5rem;}
+.review img {max-width:200px;display:block;margin-bottom:0.5rem;}
+.rating {font-size:1.2rem;color:#b7a678;margin-bottom:1rem;}
+form input, form textarea {width:100%;padding:0.5rem;margin-bottom:1rem;border-radius:4px;border:none;}
+form button {background:#f05c1b;color:#fff;padding:0.7rem 1.5rem;border:none;border-radius:4px;cursor:pointer;}
+form button:hover {background:#b73200;}
+footer {text-align:center;padding:1.5rem;background-color:rgba(0,0,0,0.85);border-top:2px solid #3e2e1e;margin-top:2rem;}
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="main-header">
+  <h1 class="site-title">GodGamers</h1>
+  <p class="site-tagline">May your flame never fade</p>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="reviews.html">Reviews</a>
+  <a href="guides.html">Guides</a>
+  <a href="about.html">About</a>
+</nav>
+
+<div class="container">
+  <h2>Latest Reviews</h2>
+
+  <div class="review">
+    <h2>Elden Ring</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/en/9/9b/Elden_Ring_cover_art.jpg" alt="Elden Ring cover">
+    <div class="rating">Rating: 9.5 / 10</div>
+    <p>A vast, haunting world filled with mystery, punishment, and triumphs. Inspired by Dark Souls and Bloodborne.</p>
+  </div>
+
+  <div class="review">
+    <h2>Dark Souls III</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/en/5/5c/Dark_Souls_III.jpg" alt="Dark Souls III cover">
+    <div class="rating">Rating: 9 / 10</div>
+    <p>Brutal combat, unforgettable bosses, and the sweet relief of the bonfire.</p>
+  </div>
+
+  <div class="review">
+    <h2>Bloodborne</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/en/f/f3/Bloodborne_cover.jpg" alt="Bloodborne cover">
+    <div class="rating">Rating: 10 / 10</div>
+    <p>Nightmarish horror and fast-paced combat. A masterclass in tension.</p>
+  </div>
+
+  <div class="review">
+    <h2>God of War: Ragnarok</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/en/a/a7/God_of_War_Ragnarok_cover.jpg" alt="God of War: Ragnarok cover">
+    <div class="rating">Rating: 9.3 / 10</div>
+    <p>Kratos and Atreus deliver one of the most emotional journeys in gaming.</p>
+  </div>
+
+  <h2>Leave a Review</h2>
+  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <input type="text" name="name" placeholder="Your name" required>
+    <input type="text" name="game" placeholder="Game title" required>
+    <textarea name="review" placeholder="Your review" required></textarea>
+    <button type="submit">Submit Review</button>
+  </form>
+
+</div>
+
+<footer>
+  <p>&copy; 2025 GodGamers. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
